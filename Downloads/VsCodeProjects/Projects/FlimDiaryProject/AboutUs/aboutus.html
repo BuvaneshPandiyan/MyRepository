@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontPage</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0; /* Hide vertical scrollbar */
+        }
+
+        html {
+            background-image: url("../BackGroundForAboutUsPage.jpg");
+            background-size: cover; /* Ensure background image covers the entire viewport */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: rgb(0, 0, 0);
+        }
+
+        body {
+            color: rgb(255, 255, 255);
+            font-family: cursive ;
+        }
+
+        .content {
+            max-height: 90%; /* Set maximum height of content area */
+            overflow-y: auto; /* Enable vertical scrollbar if content exceeds max height */
+            padding: 20px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+        #links li a{
+           text-decoration: none;
+           color: white;
+        }
+        #links li a:hover{
+        color: orange;
+        }
+        #heading:hover{
+        color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <ul  style="display: flex; list-style-type: none;">
+            <li><h1>About Us</h1></li>
+            <li id="heading" ><h1><a href="../FrontPage.html" style="margin-left: 1200px;  text-decoration: none;color: white; ">Home</a></h1></li>
+        </ul>
+        <hr>
+        <h2>Our Mission</h2>
+        <p>
+           At FilmDiary, our mission is to create the ultimate movie database, providing comprehensive listings of every movie ever made from every corner of the globe. We aim to be the go-to resource for movie enthusiasts, researchers, and casual viewers alike, offering detailed information, historical context, and up-to-date listings.   
+        </p>
+    <h2>Our Story</h2>
+    <p>
+        The idea for FilmDiary was born out of a simple frustration: the lack of a single, reliable source for complete movie listings. Existing platforms were often incomplete or region-specific. We decided to create an app that fills this gap, providing an inclusive, accurate, and user-friendly movie database.
+    </p>
+    <h2>What We Offer</h2>
+    <ul>
+        <li><h3>Comprehensive Database:</h3> Our app lists movies from the inception of cinema to the latest releases, covering every genre, era, and country.</li>
+        <li><h3>Detailed Information:</h3> Each movie entry includes cast and crew details, synopsis, release dates, trivia, and user reviews.</li>
+        <li><h3>User-Friendly Interface:</h3> Easy navigation and powerful search features allow users to find movies quickly and efficiently.</li>
+        <li><h3>Time Tracking Feature:</h3> After watching a movie or a series, simply log your entry. Our app will automatically find the duration and keep track of your watch history. You can see how much time you’ve spent watching movies and series, helping you manage your viewing habits. The app calculates and displays the total time spent watching movies and series over a week or a month, based on your preference.</li>
+        <li><h3>Community Engagement:</h3> Users can rate movies, leave reviews, and participate in discussions.</li>
+    </ul>
+    <h2>Special Features</h2>
+    <ul>
+        <li><h3>Personalized Recommendations:</h3> Our platform offers personalized movie recommendations based on users' viewing history and preferences, ensuring that they discover new films they'll love.</li>
+        <li><h3>Interactive Quizzes:</h3> Test your movie knowledge with our interactive quizzes covering various genres, directors, and film trivia.</li>
+        <li><h3>Global Chat Groups:</h3> Engage with movie enthusiasts from different countries by joining chat groups based on your interests. Discover new perspectives, share recommendations, and connect with fellow cinephiles around the world. Additionally, users can create their own chat groups to discuss specific movies or series they're passionate about.</li>
+    </ul>
+    <h2>Our Team</h2>
+    <p>Meet the passionate individuals behind FilmDiary:</p>
+    <ul>
+        <li><h3>Founder:</h3> The visionary behind FilmDiary, <a href="https://www.instagram.com/buvaneshwarx/" target="_blank">Buvaneshwaran</a> has a deep love for movies and a background in technology.</li>
+        <li><h3>CTO Name:</h3> Our technical guru ensures that the app runs smoothly and efficiently.</li>
+        <li><h3>Head of Content:</h3> Responsible for our extensive movie listings and detailed information, he is a walking encyclopedia of film knowledge.</li>
+        <li><h3>Marketing Lead:</h3> Spreading the word about FilmDiary and connecting with our community and partners.</li>
+    </ul>
+    <h2>Our Vision</h2>
+    <p>
+        We envision FilmDiary as more than just a database. We aim to build a vibrant community of movie lovers, where users can explore, discuss, and celebrate the art of cinema. Our long-term goal is to continually expand our database, incorporating user feedback and leveraging the latest technology to enhance user experience.
+    </p>
+    <h2>Join Us</h2>
+    <p>We’re always looking for movie enthusiasts and tech talents to join our team. If you’re passionate about movies and want to contribute to our mission, reach out to us at <a href="mailto:FilmDaryCareers@gmail.com">FilmDaryCareers@gmail.com</a>.</p>
+    <h2>Contact Us</h2>
+    <p>Have questions, feedback, or suggestions? We’d love to hear from you! Get in touch with us at <a href="mailto:FilmDiary@gmail.com">FilmDiary@gmail.com</a>, or follow us on social media:</p>
+    <ul id="links">
+        <li>
+            <a href="https://x.com/" target="_blank">
+                <h3>Twitter: FilmDiaryApp</h3>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/" target="_blank">
+                <h3>Facebook: FilmDiaryApp</h3>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/" target="_blank">
+                <h3>Instagram: FilmDiaryApp</h3>
+            </a>
+        </li>
+    </ul>
+    <h2>Testimonials</h2>
+    <p>Here’s what some of our users have to say:</p>
+    <ol>
+        <li>“Finally, an app that lists every movie I can think of. A must-have for any movie buff!” - Vijay Daniel</li>
+        <li>“The detail and accuracy of the information are incredible. It’s my go-to app for all things movies.” - Saravanan</li>
+        <li>“Tracking my watch time has never been easier. It’s amazing to see how much time I spend on movies and series each week and month!” - Ajith Kumar</li>
+    </ol>
+</div>
+</body>
+</html>
