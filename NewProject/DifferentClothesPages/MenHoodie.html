@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoodie Collection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<style>
+#toCart{
+  background-color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
+
+}
+#buyNow{
+  background-color: black;
+}
+  .custom-modal-height .modal-dialog {
+    max-height: 80vh; /* Adjust the max height of the modal dialog */
+  }
+  
+  .custom-modal-height .modal-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .custom-modal-height .modal-body {
+    flex: 1 1 auto;
+    overflow-y: auto; /* Add scrollbars to the body if content overflows */
+  }
+  .card-img-top{
+    height: 500px;
+  }
+  </style>
+<body>
+  <body style="margin: 0; font-family: Arial, sans-serif; background-color: #121212; color: white;">
+    <nav style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; background-color: #121212;">
+        <div style="display: flex; align-items: center;">
+            <div style="width: 25px; height: 25px; background: url('your-logo-url-here') no-repeat center center; background-size: contain;"></div>
+            <span style="font-size: 20px; margin-left: 10px;">UrbanThreads</span>
+        </div>
+        <div style="display: flex; align-items: center; flex-grow: 1; margin-left: 20px;">
+            <input type="text" placeholder="Search For Clothes" style="width: 400px; padding: 10px; border: none; border-radius: 100px; outline: none; background-color: #333; color: white;margin-left: 350px;">
+            <button style="margin-left: 10px; padding: 10px 20px; background-color: #333; border: none; border-radius: 100px; color: white; cursor: pointer;">Search</button>
+        </div>
+        <button style="padding: 10px 20px; background-color: transparent; border: 1px solid white; border-radius: 4px; color: white; cursor: pointer;">Sign in</button><hr>
+    </nav>
+</body>
+<hr>
+  <div class="container mt-5">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+      <!-- Hoodie 1 -->
+      <div class="col">
+        <div class="card">
+          <div id="CarouselBlackHoodie" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#CarouselBlackHoodie" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#CarouselBlackHoodie" data-bs-slide-to="1"></li>
+              <li data-bs-target="#CarouselBlackHoodie" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="card-img-top" src="./MenHoodieImages/BlackZipperHoodieImage1.jpg" alt="Hoodie 1">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/BlackZipperHoodieImage2.jpg" alt="Hoodie 1">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/BlackZipperHoodieImage3.jpg" alt="Hoodie 1">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#CarouselBlackHoodie" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#CarouselBlackHoodie" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Classic Black Zipper Hoodie</h5>
+            <a href="#" class="btn btn-primary" id="toCart">Add to Cart</a>
+            <a href="#" class="btn btn-success" id="buyNow">Buy Now</a>
+            <!-- Modal trigger button -->
+            <button
+            style="background-color: rgb(0, 0, 0);padding: 5px;"
+            type="button"
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#ModalBlackHoodie"
+            >
+              View Details
+            </button>
+            
+            <!-- Modal Body -->
+            <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+            <div
+              class="modal fade"
+              id="ModalBlackHoodie"
+              tabindex="-1"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              
+              role="dialog"
+              aria-labelledby="modalTitleId"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg custom-modal-height"
+                role="document"
+              >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">
+                      Classic Black Zipper Hoodie
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Elevate your wardrobe with our Classic Black Zipper Hoodie, the perfect blend of comfort, style, and durability. Made from a superior blend of 80% cotton and 20% polyester, this hoodie provides a soft, breathable feel while ensuring long-lasting wear. <br><br>
+
+                    The timeless black design is versatile, featuring a full-length zipper for easy wear and a drawstring hood to adjust to your comfort. The spacious front pockets are perfect for keeping your hands warm or storing essentials like your phone and keys. Ribbed cuffs and hem provide a snug fit, helping to retain warmth and shape even after multiple washes. <br> <br>
+                    
+                    This hoodie boasts reinforced stitching at the seams, ensuring it can withstand daily wear and tear. The fabric is pre-shrunk, so you can expect minimal shrinkage and maintain the perfect fit wash after wash. The high-quality zipper glides smoothly and adds a touch of convenience to your everyday attire. <br><br>
+                    
+                    Perfect for casual outings, gym sessions, or just lounging at home, this hoodie is a versatile addition to any wardrobe. Its classic look pairs effortlessly with jeans, joggers, or shorts, making it suitable for any occasion. Available in a range of sizes from S to XXL, catering to all body types. <br><br>
+                    
+                    Upgrade your everyday look with our Classic Black Zipper Hoodie. Experience unmatched comfort and style – order yours today and see the difference!.                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">Add To Cart</button>
+
+                  </button>
+                  <button type="button" class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Optional: Place to the bottom of scripts -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Hoodie 2 -->
+      <div class="col">
+        <div class="card">
+          <div id="CarouselBlueHoodie" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#CarouselBlueHoodie" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#CarouselBlueHoodie" data-bs-slide-to="1"></li>
+              <li data-bs-target="#CarouselBlueHoodie" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="card-img-top" src="./MenHoodieImages/BlueHoodieImage1.jpg" alt="Hoodie 2">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/BlueHoodieImage2.jpg" alt="Hoodie 2">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/BlueHoodieImage3.jpg" alt="Hoodie 2">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#CarouselBlueHoodie" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#CarouselBlueHoodie" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Trendy Blue Printed Hoodie</h5>
+            <a href="#" class="btn btn-primary" id="toCart">Add to Cart</a>
+            <a href="#" class="btn btn-success" id="buyNow">Buy Now</a>
+ <!-- Modal trigger button -->
+ <button
+ style="background-color: rgb(0, 0, 0);padding: 5px;"
+ type="button"
+   class="btn btn-primary btn-lg"
+   data-bs-toggle="modal"
+   data-bs-target="#ModalBlueHoodie"
+ >
+   View Details
+ </button>
+ 
+ <!-- Modal Body -->
+ <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+ <div
+   class="modal fade"
+   id="ModalBlueHoodie"
+   tabindex="-1"
+   data-bs-backdrop="static"
+   data-bs-keyboard="false"
+   
+   role="dialog"
+   aria-labelledby="modalTitleId"
+   aria-hidden="true"
+ >
+   <div
+     class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg custom-modal-height"
+     role="document"
+   >
+     <div class="modal-content">
+       <div class="modal-header">
+        <h5 class="modal-title" id="modalTitleId">
+          Trendy Blue Printed Hoodie
+        </h5>
+         <button
+           type="button"
+           class="btn-close"
+           data-bs-dismiss="modal"
+           aria-label="Close"
+         ></button>
+       </div>
+       <div class="modal-body">
+        Discover unparalleled comfort and modern style with our Classic Blue Comfort Zip Hoodie. Crafted from a luxurious blend of 85% organic cotton and 15% recycled polyester, this hoodie offers a soft, eco-friendly feel while promoting sustainability. The rich blue shade is perfect for any season, featuring a full-length zipper for versatile wear and a cozy, lined hood to keep you warm on chilly days. <br><br>
+
+        Designed with practicality in mind, this hoodie includes convenient side pockets to store your essentials or keep your hands warm. The ribbed cuffs and hem ensure a secure fit, maintaining the hoodie's shape and warmth retention through countless wears and washes. Double-stitched seams add an extra layer of durability, making it a reliable choice for everyday wear. The front showcases a subtle, stylish print, adding a unique touch to this classic piece. <br><br>
+
+        Our hoodie is pre-washed to prevent shrinkage, ensuring a consistent fit that you can rely on. The high-quality zipper operates smoothly, providing an added layer of ease to your daily routine. Whether you're heading to a casual outing, working out, or simply relaxing at home, this hoodie is a versatile staple that pairs effortlessly with jeans, leggings, or athletic wear. <br><br>
+
+        Available in sizes ranging from XS to XXL, the Classic Blue Comfort Zip Hoodie caters to a wide range of body types. Elevate your wardrobe with this stylish and sustainable piece – order yours today and experience the perfect blend of comfort and fashion.
+</div>
+<div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+        >
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Add To Cart</button>
+        <button type="button" class="btn btn-primary">Buy Now</button>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Optional: Place to the bottom of scripts -->
+</div>
+</div>
+</div>
+      <!-- Hoodie 3 -->
+      <div class="col">
+        <div class="card">
+          <div id="CarouselLightBlueHoodie" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#CarouselLightBlueHoodie" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#CarouselLightBlueHoodie" data-bs-slide-to="1"></li>
+              <li data-bs-target="#CarouselLightBlueHoodie" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="card-img-top" src="./MenHoodieImages/LightBlueHoodieImage1.jpg" alt="Hoodie 3">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/LightBlueHoodieImage2.jpg" alt="Hoodie 3">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/LightBlueHoodieImage3.jpg" alt="Hoodie 3">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#CarouselLightBlueHoodie" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#CarouselLightBlueHoodie" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>          
+          <div class="card-body">
+            <h5 class="card-title">Cool Breeze Light Blue Hoodie</h5>
+            <a href="#" class="btn btn-primary" id="toCart">Add to Cart</a>
+            <a href="#" class="btn btn-success" id="buyNow">Buy Now</a>
+          <!-- Modal trigger button -->
+          <button
+          style="background-color: rgb(0, 0, 0);padding: 5px;"
+            type="button"
+            class="btn btn-primary btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#ModalLightBlueHoodie"
+          >
+            View Details
+          </button>
+          
+          <!-- Modal Body -->
+          <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+          <div
+            class="modal fade"
+            id="ModalLightBlueHoodie"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg custom-modal-height"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalTitleId">
+                    Cool Breeze Light Blue Hoodie
+                  </h5>
+                  
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Discover a new level of comfort and style with our Light Blue Comfort Zip Hoodie. Made from a premium blend of 90% organic cotton and 10% recycled polyester, this hoodie offers a soft, sustainable feel that's perfect for everyday wear. The light blue color brings a fresh, airy vibe to your wardrobe, featuring a full-length zipper for versatile styling and an adjustable drawstring hood for added coziness. <br><br>
+          
+                  Designed with convenience in mind, this hoodie includes spacious front pockets to keep your essentials close at hand. The ribbed cuffs and hem ensure a snug fit, retaining warmth and shape through numerous washes and wears. Enhanced with durable double-stitched seams, this hoodie is built to withstand daily activities. The front boasts a minimalist yet chic print, adding a unique touch to the classic design. <br><br>
+          
+                  Pre-washed to minimize shrinkage, this hoodie maintains its perfect fit wear after wear. The smooth-gliding zipper adds a touch of ease to your outfit changes, making it an ideal choice for casual outings, workouts, or lounging at home. This versatile piece pairs effortlessly with jeans, shorts, or joggers, making it a must-have addition to your wardrobe. <br><br>
+          
+                  Available in sizes ranging from XS to XXL, the Light Blue Comfort Zip Hoodie caters to all body types. Elevate your style and embrace unmatched comfort – order yours today and feel the difference.
+          </div>
+          <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">Add To Cart</button>
+                  <button type="button" class="btn btn-primary">Buy Now</button>
+          </div>
+          
+              </div>
+            </div>
+          </div>
+          
+          <!-- Optional: Place to the bottom of scripts -->
+        </div>
+      </div>
+    </div>
+
+<!-- Hoodie 4 -->
+
+      <div class="col">
+        <div class="card">
+          <div id="CarouselLightGreenHoodie" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#CarouselLightGreenHoodie" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#CarouselLightGreenHoodie" data-bs-slide-to="1"></li>
+              <li data-bs-target="#CarouselLightGreenHoodie" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="card-img-top" src="./MenHoodieImages/LightGreenHoodieImage1.jpg" alt="Hoodie 4">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/LightGreenHoodieImage2.jpg" alt="Hoodie 4">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/LightGreenHoodieImage3.jpg" alt="Hoodie 4">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#CarouselLightGreenHoodie" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#CarouselLightGreenHoodie" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>         
+           <div class="card-body">
+            <h5 class="card-title">Fresh Meadow Light Green Hoodie</h5>
+            <a href="#" class="btn btn-primary" id="toCart">Add to Cart</a>
+            <a href="#" class="btn btn-success" id="buyNow">Buy Now</a>
+           <!-- Modal trigger button -->
+          <button
+          style="background-color: rgb(0, 0, 0);padding: 5px;"
+            type="button"
+            class="btn btn-primary btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#ModalLightGreenHoodie"
+          >
+            View Details
+          </button>
+          
+          <!-- Modal Body -->
+          <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+          <div
+            class="modal fade"
+            id="ModalLightGreenHoodie"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg custom-modal-height"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalTitleId">
+                    Fresh Meadow Light Green Hoodie
+                  </h5>
+                  
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Refresh your wardrobe with our Light Green Comfort Zip Hoodie, combining modern style with ultimate coziness. Crafted from a blend of 88% organic cotton and 12% recycled polyester, this hoodie is as soft as it is eco-friendly. The light green hue brings a touch of nature to your look, featuring a full-length zipper for easy wear and a plush, drawstring hood with stylish stripes for adjustable comfort. <br><br>
+          
+                  This hoodie is designed for practicality, with large kangaroo pockets to keep your hands warm and store your daily essentials. The ribbed cuffs and hem offer a snug fit, maintaining the hoodie's shape and warmth through many washes. Reinforced stitching ensures durability, making it perfect for everyday wear. The front displays a subtle yet stylish print, adding a distinctive flair to this classic piece. <br><br>
+          
+                  Pre-shrunk to avoid any surprises, this hoodie retains its ideal fit wash after wash. The smooth, durable zipper allows for effortless changes, making it suitable for a variety of activities, from casual outings to relaxing at home. This versatile piece pairs seamlessly with jeans, shorts, or joggers, making it an essential addition to your wardrobe. <br><br>
+          
+                  Available in sizes from XS to XXL, the Light Green Comfort Zip Hoodie is designed to suit all body types. Step up your style game with this chic and comfortable hoodie – order yours today and experience the difference.
+          </div>
+          <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">Add To Cart</button>
+                  <button type="button" class="btn btn-primary">Buy Now</button>
+          </div>
+          
+              </div>
+            </div>
+          </div>
+          
+          <!-- Optional: Place to the bottom of scripts -->
+        </div>
+      </div>
+    </div>
+<!-- Hoodie 5 -->
+      <div class="col">
+        <div class="card">
+          <div id="CarouselPrintedHoodie" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#CarouselPrintedHoodie" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#CarouselPrintedHoodie" data-bs-slide-to="1"></li>
+              <li data-bs-target="#CarouselPrintedHoodie" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="card-img-top" src="./MenHoodieImages/PrintedHoodieImage1.jpg" alt="Hoodie 5">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/PrintedHoodieImage2.jpg" alt="Hoodie 5">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/PrintedHoodieImage3.jpg" alt="Hoodie 5">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#CarouselPrintedHoodie" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#CarouselPrintedHoodie" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>          
+          <div class="card-body">
+            <h5 class="card-title">Color Explosion Full Print Hoodie</h5>
+            <a href="#" class="btn btn-primary" id="toCart">Add to Cart</a>
+            <a href="#" class="btn btn-success" id="buyNow">Buy Now</a>
+            <!-- Modal trigger button -->
+          <button
+          style="background-color: rgb(0, 0, 0);padding: 5px;"
+            type="button"
+            class="btn btn-primary btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#ModalPrintedHoodie"
+          >
+            View Details
+          </button>
+          
+          <!-- Modal Body -->
+          <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+          <div
+            class="modal fade"
+            id="ModalPrintedHoodie"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg custom-modal-height"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalTitleId">
+                    Color Explosion Full Print Hoodie
+                  </h5>
+                  
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Elevate your casual wear with our Fully Printed Comfort Zip Hoodie, where vibrant colors meet ultimate comfort. Made from a high-quality blend of 80% cotton and 20% recycled polyester, this hoodie offers a soft, durable feel that's perfect for any occasion. The all-over colorful print adds a bold and dynamic statement to your outfit, while the full-length zipper allows for versatile styling and easy wear. <br><br>
+          
+                  This hoodie is designed with functionality in mind, featuring spacious front pockets for keeping your hands warm or storing essentials. The ribbed cuffs and hem ensure a snug fit, maintaining the hoodie's shape and warmth retention through numerous washes. Reinforced stitching at the seams enhances durability, making it a reliable choice for daily wear. <br><br>
+          
+                  Pre-shrunk to maintain its perfect fit, this hoodie promises minimal shrinkage and consistent comfort wash after wash. The high-quality zipper glides smoothly, adding a touch of convenience to your daily attire. Whether you're heading out for a casual day, hitting the gym, or lounging at home, this hoodie is a versatile and stylish addition to your wardrobe. <br><br>
+          
+                  Available in sizes ranging from S to XXL, the Fully Printed Comfort Zip Hoodie caters to all body types. Make a bold fashion statement and experience unmatched comfort – order yours today and stand out from the crowd.
+          </div>
+          <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">Add To Cart</button>
+                  <button type="button" class="btn btn-primary">Buy Now</button>
+          </div>
+          
+              </div>
+            </div>
+          </div>
+          
+          <!-- Optional: Place to the bottom of scripts -->
+        </div>
+      </div>
+    </div>
+
+<!-- Hoodie 6 -->
+
+      <div class="col">
+        <div class="card">
+          <div id="CarouselPurpleHoodie" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#CarouselPurpleHoodie" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#CarouselPurpleHoodie" data-bs-slide-to="1"></li>
+              <li data-bs-target="#CarouselPurpleHoodie" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="card-img-top" src="./MenHoodieImages/PurpleHoodieImage1.jpg" alt="Hoodie 6">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/PurpleHoodieImage2.jpg" alt="Hoodie 6">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/PurpleHoodieImage3.jpg" alt="Hoodie 6">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#CarouselPurpleHoodie" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#CarouselPurpleHoodie" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>
+            <div class="card-body">
+            <h5 class="card-title">Luxe Purple Hoodie</h5>
+            <a href="#" class="btn btn-primary" id="toCart">Add to Cart</a>
+            <a href="#" class="btn btn-success" id="buyNow">Buy Now</a>
+           <!-- Modal trigger button -->
+          <button
+          style="background-color: rgb(0, 0, 0);padding: 5px;"
+            type="button"
+            class="btn btn-primary btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#ModalPurpleHoodie"
+          >
+            View Details
+          </button>
+          
+          <!-- Modal Body -->
+          <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+          <div
+            class="modal fade"
+            id="ModalPurpleHoodie"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg custom-modal-height"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalTitleId">
+                    Luxe Purple Hoodie
+                  </h5>
+                  
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Add a pop of color to your wardrobe with our Purple Comfort Zip Hoodie, designed for both style and comfort. Crafted from a superior blend of 85% organic cotton and 15% recycled polyester, this hoodie offers a luxuriously soft touch while supporting eco-friendly fashion. The rich purple hue provides a bold, eye-catching look, while the full-length zipper allows for easy layering and versatile wear. <br><br>
+          
+                  This hoodie features a cozy, drawstring hood for adjustable comfort and large front pockets to keep your hands warm or store small essentials. The ribbed cuffs and hem ensure a snug fit, helping to maintain the hoodie's shape and warmth through everyday use. Double-stitched seams add extra durability, making it a dependable choice for all your activities. <br><br>
+          
+                  Pre-washed to reduce shrinkage, this hoodie retains its perfect fit and vibrant color through multiple washes. The smooth, high-quality zipper operates effortlessly, offering convenience for your daily routine. Whether you’re heading to a casual outing, working out, or lounging at home, this hoodie is a versatile and fashionable choice. <br><br>
+          
+                  Available in sizes from XS to XXL, the Purple Comfort Zip Hoodie is designed to suit a variety of body types. Embrace comfort and style with this standout hoodie – order yours today and bring a fresh splash of color to your wardrobe.
+          </div>
+          <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">Add To Cart</button>
+                  <button type="button" class="btn btn-primary">Buy Now</button>
+          </div>          
+              </div>
+            </div>
+          </div>
+          
+          <!-- Optional: Place to the bottom of scripts -->
+        </div>
+      </div>
+    </div>
+
+<!-- Hoodie 7 -->
+      <div class="col">
+        <div class="card">
+          <div id="CarouselRedHalfHandHoodie" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#CarouselRedHalfHandHoodie" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#CarouselRedHalfHandHoodie" data-bs-slide-to="1"></li>
+              <li data-bs-target="#CarouselRedHalfHandHoodie" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="card-img-top" src="./MenHoodieImages/RedHalfHandHoodieImage1.jpg" alt="Hoodie 8">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/RedHalfHandHoodieImage2.jpg" alt="Hoodie 8">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/RedHalfHandHoodieImage3.jpg" alt="Hoodie 8">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#CarouselRedHalfHandHoodie" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#CarouselRedHalfHandHoodie" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>
+            <div class="card-body">
+            <h5 class="card-title">Scarlet Red Half-Sleeve Hoodie</h5>
+            <a href="#" class="btn btn-primary" id="toCart">Add to Cart</a>
+            <a href="#" class="btn btn-success" id="buyNow">Buy Now</a>
+           <!-- Modal trigger button -->
+          <button
+          style="background-color: rgb(0, 0, 0);padding: 5px;"
+            type="button"
+            class="btn btn-primary btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#ModalRedHalfHandHoodie"
+          >
+            View Details
+          </button>
+          
+          <!-- Modal Body -->
+          <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+          <div
+            class="modal fade"
+            id="ModalRedHalfHandHoodie"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg custom-modal-height"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalTitleId">
+                    Scarlet Red Half-Sleeve Hoodie
+                  </h5>
+                  
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Inject some vibrant energy into your wardrobe with our Red Half-Hand Comfort Hoodie. Perfect for those who appreciate bold fashion and supreme comfort, this hoodie is crafted from a high-quality blend of 90% organic cotton and 10% recycled polyester. The striking red color commands attention, and the half-hand design adds a modern twist to a classic look. <br><br>
+          
+                  Featuring a chic short-sleeve design with traditional hoodie elements, this hoodie is ideal for layering or wearing on its own. The cozy, adjustable hood offers a customizable fit, while the front kangaroo pocket provides a convenient place to keep your hands warm or store small items. The ribbed hem and cuffs ensure a comfortable, snug fit that retains its shape through everyday wear. <br><br>
+          
+                  Constructed with reinforced stitching at the seams, this hoodie is built to last, with a pre-shrunk fabric that maintains its size and vibrant color through countless washes. The smooth, high-quality zipper glides effortlessly for easy wear and versatile styling options. <br><br>
+          
+                  Whether you’re heading to the gym, enjoying a casual outing, or just lounging at home, this hoodie offers a stylish and comfortable option. The bold red color pairs well with jeans, shorts, or leggings, making it a versatile addition to your wardrobe. <br><br>
+          
+                  Available in sizes from XS to XXL, the Red Half-Hand Comfort Hoodie caters to a range of body types. Make a statement with this eye-catching piece – order yours today and enjoy the perfect blend of style and comfort.
+          </div>
+          <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">Add To Cart</button>
+                  <button type="button" class="btn btn-primary">Buy Now</button>
+          </div>
+          
+              </div>
+            </div>
+          </div>
+          
+          <!-- Optional: Place to the bottom of scripts -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Hoodie 8 -->
+
+      <div class="col">
+        <div class="card">
+          <div id="CarouselWhiteHoodie" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#CarouselWhiteHoodie" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#CarouselWhiteHoodie" data-bs-slide-to="1"></li>
+              <li data-bs-target="#CarouselWhiteHoodie" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="card-img-top" src="./MenHoodieImages/WhiteHoodieImage1.jpg" alt="Hoodie 8">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/WhiteHoodieImage2.jpg" alt="Hoodie 8">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/WhiteHoodieImage3.jpg" alt="Hoodie 8">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#CarouselWhiteHoodie" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#CarouselWhiteHoodie" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>          <div class="card-body">
+            <h5 class="card-title">Snowy White Soft Hoodie</h5>
+            <a href="#" class="btn btn-primary" id="toCart">Add to Cart</a>
+            <a href="#" class="btn btn-success" id="buyNow">Buy Now</a>
+            <!-- Modal trigger button -->
+          <button
+          style="background-color: rgb(0, 0, 0);padding: 5px;"
+            type="button"
+            class="btn btn-primary btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#ModalWhiteHoodie"
+          >
+            View Details
+          </button>
+          
+          <!-- Modal Body -->
+          <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+          <div
+            class="modal fade"
+            id="ModalWhiteHoodie"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg custom-modal-height"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalTitleId">
+                    Snowy White Soft Hoodie
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Refresh your wardrobe essentials with our White Comfort Zip Hoodie, designed for those who value classic style and exceptional comfort. Made from a high-quality blend of 80% cotton and 20% recycled polyester, this hoodie offers a soft, breathable feel perfect for any season. The clean, crisp white color serves as a versatile foundation for countless outfits, while the full-length zipper provides easy wear and stylish layering options. <br><br>
+          
+                  This hoodie features a cozy, adjustable drawstring hood and large front pockets for practicality. The ribbed cuffs and hem ensure a snug fit, helping to retain warmth and maintain the hoodie's shape through regular use. Double-stitched seams enhance durability, making this hoodie a reliable choice for daily wear. <br><br>
+          
+                  Pre-shrunk to minimize shrinkage, this hoodie retains its perfect fit and bright white color wash after wash. The high-quality zipper glides smoothly for easy adjustments, adding convenience to your wardrobe. Whether you're heading to a casual outing, hitting the gym, or lounging at home, this hoodie offers a timeless and comfortable option. <br><br>
+          
+                  Available in sizes ranging from XS to XXL, the White Comfort Zip Hoodie is designed to suit a variety of body types. Embrace a fresh, clean look with this versatile hoodie – order yours today and enjoy classic comfort and style.
+          </div>
+          <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">Add To Cart</button>
+                  <button type="button" class="btn btn-primary">Buy Now</button>
+          </div>
+          
+              </div>
+            </div>
+          </div>
+          
+          <!-- Optional: Place to the bottom of scripts -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Hoodie 9 -->
+
+      <div class="col">
+        <div class="card">
+          <div id="CarouselCreamHoodie" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#CarouselCreamHoodie" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#CarouselCreamHoodie" data-bs-slide-to="1"></li>
+              <li data-bs-target="#CarouselCreamHoodie" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="card-img-top" src="./MenHoodieImages/CreamHoodieImage1.jpg" alt="Hoodie 9">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/CreamHoodieImage2.jpg" alt="Hoodie 9">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/CreamHoodieImage3.jpg" alt="Hoodie 9">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#CarouselCreamHoodie" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#CarouselCreamHoodie" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>          <div class="card-body">
+            <h5 class="card-title">Creamy Comfort Hoodie</h5>
+            <a href="#" class="btn btn-primary" id="toCart">Add to Cart</a>
+            <a href="#" class="btn btn-success" id="buyNow">Buy Now</a>
+           <!-- Modal trigger button -->
+          <button
+          style="background-color: rgb(0, 0, 0);padding: 5px;"
+            type="button"
+            class="btn btn-primary btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#ModalCreamHoodie"
+          >
+            View Details
+          </button>
+          
+          <!-- Modal Body -->
+          <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+          <div
+            class="modal fade"
+            id="ModalCreamHoodie"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg custom-modal-height"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  
+                  <h5 class="modal-title" id="modalTitleId">
+                    Creamy Comfort Hoodie
+                  </h5>
+                  
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Embrace timeless style and luxurious comfort with our Cream Comfort Zip Hoodie. Perfect for adding a touch of sophistication to your wardrobe, this hoodie is crafted from a high-quality blend of 85% organic cotton and 15% recycled polyester. The soft cream color provides a versatile and elegant base for any outfit, while the full-length zipper allows for easy layering and versatile wear. <br><br>
+          
+                  Designed for both comfort and practicality, this hoodie features a cozy, adjustable drawstring hood and spacious front pockets for warmth and convenience. The ribbed cuffs and hem ensure a snug fit that holds its shape through regular wear. The hoodie’s reinforced stitching at the seams enhances its durability, making it a reliable choice for everyday use. <br><br>
+          
+                  Pre-washed to prevent shrinkage, this hoodie maintains its perfect fit and rich cream color through multiple washes. The smooth, high-quality zipper glides effortlessly, offering ease of wear and stylish versatility. Whether you’re dressing up for a casual outing, heading to the gym, or simply relaxing at home, this hoodie is a versatile and stylish addition to your collection. <br><br>
+          
+                  Available in sizes from XS to XXL, the Cream Comfort Zip Hoodie is designed to fit a range of body types. Add a touch of elegance to your wardrobe with this classic hoodie – order yours today and experience the perfect blend of comfort and style.
+          </div>
+          <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">Add To Cart</button>
+                  <button type="button" class="btn btn-primary">Buy Now</button>
+          </div>
+          
+              </div>
+            </div>
+          </div>
+          
+          <!-- Optional: Place to the bottom of scripts -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Hoodie 10 -->
+      <div class="col">
+        <div class="card">
+          <div id="CarouselDarkBlueHoodie" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#CarouselDarkBlueHoodie" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#CarouselDarkBlueHoodie" data-bs-slide-to="1"></li>
+              <li data-bs-target="#CarouselDarkBlueHoodie" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="card-img-top" src="./MenHoodieImages/DarkBlueHoodieImage1.jpg" alt="Hoodie 10">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/DarkBlueHoodieImage2.jpg" alt="Hoodie 10">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/DarkBlueHoodieImage3.jpg" alt="Hoodie 10">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#CarouselDarkBlueHoodie" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#CarouselDarkBlueHoodie" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>          <div class="card-body">
+            <h5 class="card-title">Midnight Blue Cozy Hoodie</h5>
+            <a href="#" class="btn btn-primary" id="toCart">Add to Cart</a>
+            <a href="#" class="btn btn-success" id="buyNow">Buy Now</a>
+           <!-- Modal trigger button -->
+          <button
+          style="background-color: rgb(0, 0, 0);padding: 5px;"
+            type="button"
+            class="btn btn-primary btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#ModalDarkBlueHoodie"
+          >
+            View Details
+          </button>
+          
+          <!-- Modal Body -->
+          <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+          <div
+            class="modal fade"
+            id="ModalDarkBlueHoodie"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg custom-modal-height"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  
+                  <h5 class="modal-title" id="modalTitleId">
+                    Midnight Blue Cozy Hoodie
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Elevate your casual wardrobe with our Dark Blue Comfort Zip Hoodie, where rich color meets exceptional comfort and practicality. Crafted from a premium blend of 80% cotton and 20% recycled polyester, this hoodie offers a soft, cozy feel that's perfect for a variety of occasions. The deep, dark blue hue adds a sophisticated touch to your outfit, while the full-length zipper provides versatile styling and easy wear. <br><br>
+          
+                  This hoodie is designed with both comfort and functionality in mind. It features a warm, adjustable drawstring hood and spacious front pockets for keeping your hands warm or storing your essentials. The ribbed cuffs and hem offer a secure fit, ensuring the hoodie retains its shape and warmth through regular wear. Double-stitched seams enhance durability, making this hoodie a reliable choice for everyday use. <br><br>
+          
+                  Pre-shrunk to prevent shrinkage, this hoodie maintains its ideal fit and rich dark blue color through countless washes. The high-quality zipper glides smoothly for easy adjustments and versatile styling options. Whether you’re heading to a casual gathering, working out, or relaxing at home, this hoodie is a versatile and stylish choice. <br><br>
+          
+                  Available in sizes from XS to XXL, the Dark Blue Comfort Zip Hoodie caters to a range of body types. Add a touch of elegance and comfort to your wardrobe – order yours today and enjoy the perfect combination of style and functionality.
+          </div>
+          <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">Add To Cart</button>
+                  <button type="button" class="btn btn-primary">Buy Now</button>
+          </div>
+          
+              </div>
+            </div>
+          </div>
+          
+          <!-- Optional: Place to the bottom of scripts -->
+        </div>
+      </div>
+    </div>
+
+<!-- Hoodie 11 -->
+
+      <div class="col">
+        <div class="card">
+          <div id="CarouselGrayHoodie" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#CarouselGrayHoodie" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#CarouselGrayHoodie" data-bs-slide-to="1"></li>
+              <li data-bs-target="#CarouselGrayHoodie" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="card-img-top" src="./MenHoodieImages/GrayHoodieImage1.jpg" alt="Hoodie 11">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/GrayHoodieImage2.jpg" alt="Hoodie 11">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/GrayHoodieImage3.jpg" alt="Hoodie 11">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#CarouselGrayHoodie" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#CarouselGrayHoodie" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>          <div class="card-body">
+            <h5 class="card-title">Cool Gray Relaxed Hoodie</h5>
+            <a href="#" class="btn btn-primary" id="toCart">Add to Cart</a>
+            <a href="#" class="btn btn-success" id="buyNow">Buy Now</a>
+           <!-- Modal trigger button -->
+          <button
+          style="background-color: rgb(0, 0, 0);padding: 5px;"
+            type="button"
+            class="btn btn-primary btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#ModalGrayHoodie"
+          >
+            View Details
+          </button>
+          
+          <!-- Modal Body -->
+          <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+          <div
+            class="modal fade"
+            id="ModalGrayHoodie"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg custom-modal-height"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalTitleId">
+                    Cool Gray Relaxed Hoodie
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Discover the perfect blend of style and comfort with our Gray Comfort Zip Hoodie. This essential piece is crafted from a high-quality blend of 85% organic cotton and 15% recycled polyester, offering a soft, cozy feel that’s ideal for any occasion. The versatile gray color provides a sleek and understated look, making this hoodie a staple addition to your wardrobe. <br><br>
+          
+                  Featuring a full-length zipper for easy layering and an adjustable drawstring hood for a customizable fit, this hoodie is designed with both comfort and practicality in mind. The spacious front pockets offer a convenient place to warm your hands or store small essentials, while the ribbed cuffs and hem ensure a secure fit that maintains its shape and warmth through regular wear. <br><br>
+          
+                  Constructed with double-stitched seams, this hoodie is built to withstand everyday activities, and its pre-washed fabric ensures minimal shrinkage and long-lasting color retention. The smooth, high-quality zipper glides effortlessly, providing easy access and a touch of modern style to your outfit. <br><br>
+          
+                  Whether you’re heading to the gym, relaxing at home, or out for a casual outing, the Gray Comfort Zip Hoodie offers both functionality and fashion. Available in sizes from XS to XXL, it’s designed to fit a range of body types. Elevate your everyday look with this versatile and comfortable hoodie – order yours today and enjoy classic style and comfort.
+          </div>
+          <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">Add To Cart</button>
+                  <button type="button" class="btn btn-primary">Buy Now</button>
+          </div>
+          
+              </div>
+            </div>
+          </div>
+          
+          <!-- Optional: Place to the bottom of scripts -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Hodie 12 -->
+
+      <div class="col">
+        <div class="card">
+ <div id="CarouselYellowHoodie" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#CarouselYellowHoodie" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#CarouselYellowHoodie" data-bs-slide-to="1"></li>
+              <li data-bs-target="#CarouselYellowHoodie" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="card-img-top" src="./MenHoodieImages/YellowHoodieImage1.jpg" alt="Hoodie 12">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/YellowHoodieImage2.jpg" alt="Hoodie 12">
+              </div>
+              <div class="carousel-item">
+                <img class="card-img-top" src="./MenHoodieImages/YellowHoodieImage3.jpg" alt="Hoodie 12">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#CarouselYellowHoodie" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#CarouselYellowHoodie" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>          <div class="card-body">
+            <h5 class="card-title">Sunny Yellow Cozy Hoodie</h5>
+            <a href="#" class="btn btn-primary" id="toCart">Add to Cart</a>
+            <a href="#" class="btn btn-success" id="buyNow">Buy Now</a>
+           <!-- Modal trigger button -->
+          <button
+          style="background-color: rgb(0, 0, 0);padding: 5px;"
+            type="button"
+            class="btn btn-primary btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#ModalYellowHoodie"
+          >
+            View Details
+          </button>
+          
+          <!-- Modal Body -->
+          <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+          <div
+            class="modal fade"
+            id="ModalYellowHoodie"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg custom-modal-height"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalTitleId">
+                    Sunny Yellow Cozy Hoodie
+                  </h5>
+                  
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Brighten up your wardrobe with our Yellow Comfort Zip Hoodie, a perfect blend of vibrant color and cozy comfort. Crafted from a high-quality mix of 80% cotton and 20% recycled polyester, this hoodie offers a soft, breathable feel that’s perfect for both chilly days and relaxed lounging. The cheerful yellow hue adds a pop of color to any outfit, making it a standout piece in your collection. <br><br>
+          
+                  Designed for both style and functionality, this hoodie features a full-length zipper for easy layering and an adjustable drawstring hood to keep you warm and comfortable. The large front pockets are perfect for warming your hands or keeping your essentials close at hand. The ribbed cuffs and hem provide a snug fit that maintains its shape and warmth, even with regular wear. <br><br>
+          
+                  Built to last, this hoodie features reinforced stitching at the seams and a pre-shrunk fabric to ensure it holds up through multiple washes without losing its fit or vibrant color. The smooth, high-quality zipper glides effortlessly, adding a touch of convenience and modern style to your look. <br><br>
+          
+                  Whether you’re heading out for a casual day out, hitting the gym, or just relaxing at home, this yellow hoodie offers both comfort and a bold fashion statement. Available in sizes from XS to XXL, it’s designed to fit a range of body types. Embrace a burst of color and comfort – order your Yellow Comfort Zip Hoodie today!
+          </div>
+          <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">Add To Cart</button>
+                  <button type="button" class="btn btn-primary">Buy Now</button>
+          </div>
+          
+              </div>
+            </div>
+          </div>
+          
+          <!-- Optional: Place to the bottom of scripts -->
+        </div>
+      </div>
+    </div>
+      <!-- Add more hoodies as needed -->
+    </div>
+  </div>
+</body>
+</html>
+
+<script>
+  const myModal = new bootstrap.Modal(
+    document.getElementById("modalId"),
+    options,
+  );
+</script>

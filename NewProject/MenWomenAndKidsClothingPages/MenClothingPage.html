@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.72.0">
+  <title>Carousel Template · Bootstrap</title>
+
+  <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/">
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    /* GLOBAL STYLES
+    --------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-top: 0px;
+      padding-bottom: 3rem;
+      color: #5a5a5a;
+    }
+
+    /* MARKETING CONTENT
+-------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .col-lg-4 {
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .marketing h2 {
+      font-weight: 400;
+    }
+
+    .marketing .col-lg-4 p {
+      margin-right: .75rem;
+      margin-left: .75rem;
+    }
+
+
+    /* Featurettes
+------------------------- */
+
+    .featurette-divider {
+      margin: 5rem 0;
+      /* Space out the Bootstrap <hr> more */
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -.05rem;
+    }
+
+
+    /* RESPONSIVE CSS
+-------------------------------------------------- */
+
+    @media (min-width: 40em) {
+
+      /* Bump up size of carousel content */
+      .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+      }
+
+      .featurette-heading {
+        font-size: 50px;
+      }
+    }
+
+    @media (min-width: 62em) {
+      .featurette-heading {
+        margin-top: 7rem;
+      }
+    }
+    .fixed-size-image {
+  height: 500px;
+  width: 100%;
+  object-fit: cover; /* Ensures the images are cropped to fit the container while maintaining their aspect ratio */
+}
+  </style>
+  <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+<body style="margin: 0; font-family: Arial, sans-serif; background-color: #121212; color: white;">
+    <nav style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; background-color: #121212;">
+        <div style="display: flex; align-items: center;">
+            <div style="width: 25px; height: 25px; background: url('your-logo-url-here') no-repeat center center; background-size: contain;"></div>
+            <span style="font-size: 20px; margin-left: 10px;">UrbanThreads</span>
+        </div>
+        <div style="display: flex; align-items: center; flex-grow: 1; margin-left: 20px;">
+            <input type="text" placeholder="Search For Clothes" style="width: 400px; padding: 10px; border: none; border-radius: 100px; outline: none; background-color: #333; color: white;margin-left: 350px;">
+            <button style="margin-left: 10px; padding: 10px 20px; background-color: #333; border: none; border-radius: 100px; color: white; cursor: pointer;">Search</button>
+        </div>
+        <button style="padding: 10px 20px; background-color: transparent; border: 1px solid white; border-radius: 4px; color: white; cursor: pointer;">Sign in</button><hr>
+    </nav>
+</body>
+  </header>
+
+  <main>
+
+
+    <hr>
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="fixed-size-image" src="./MenClothingPageImages/MenClothingPageHoodieImage.jpg" style="height: 500px;">
+
+          <h2>“Escape the Everyday Chaos – Hood Up, World Off, and Enjoy the Comfort.”</h2>
+          <p>
+            Hoodies are the ultimate blend of comfort and style, offering warmth and relaxation for any occasion. Made from soft, cozy 
+            fabrics, they are perfect for lounging at home, running errands, or hanging out with friends. With versatile designs and a 
+            range of colors, hoodies effortlessly complement any outfit and season. Embrace the perfect mix of practicality and fashion 
+            with a hoodie that adapts to your lifestyle. Discover your new favorite go-to for everyday comfort and coolness.
+          </p>
+          <p>
+            <a class="btn btn-secondary" href="../DifferentClothesPages/MenHoodie.html" role="button">Explore Hoodies &raquo;</a>
+          </p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="fixed-size-image" src="./MenClothingPageImages/MenClothingPageSweatShirtImage.jpg" alt="" style="height: 500px;">
+
+
+          <h2>"Stay Cozy, Stay Stylish – Find Your Perfect Sweatshirt That Combines Comfort, Fashion, and Versatility!"</h2>
+          <p>Elevate your comfort with our premium sweatshirts, designed for the modern man. Crafted from soft, breathable fabrics, these 
+            sweatshirts offer warmth without compromising on style. Perfect for any casual outing, they come in a variety of colors and 
+            designs to match your unique taste. Whether you're lounging at home or stepping out for a casual hangout, our sweatshirts 
+            provide the ultimate blend of relaxation and fashion. Embrace effortless style and unbeatable comfort with our latest 
+            collection.</p>
+          <p>
+            <a class="btn btn-secondary" href="#" role="button" style="margin-bottom: 50px; margin-top: 50px;">Shop the Sweat Collection  &raquo;</a></p><hr>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="fixed-size-image" src="./MenClothingPageImages/MenClothingPageTshirtImage.jpg" alt="" style="height: 500px;">
+          </svg>
+
+          <h2>"Feel Good, Look Great – Discover the Ultimate T-Shirt for Comfort, Style, and Versatility!"</h2>
+          <p>
+            Discover the perfect blend of comfort and style with our exclusive collection of T-shirts. Crafted from high-quality fabrics, 
+            these tees are designed to keep you looking sharp and feeling great all day long. Whether you're hitting the gym, heading to a 
+            casual hangout, or just lounging at home, our T-shirts offer versatile looks that elevate your wardrobe. With a variety of 
+            colors and unique designs, you'll find the ideal match for your personal style. Upgrade your essentials and make a bold 
+            statement with our standout T-shirts today!
+          </p>
+          <p>
+            <a class="btn btn-secondary" href="#" role="button">Find Your Perfect Tee &raquo;</a>
+          </p>        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="fixed-size-image" src="./MenClothingPageImages/MenClothingPageShirtImage.jpg" alt="" style="height: 500px;">
+
+<h2>          Effortless Style for Every Occasion – Explore Our Casual Shirt Collection!</h2>
+<p>
+Discover the perfect blend of comfort and style with our Casual Shirt Collection. Each shirt is designed to elevate your everyday look, whether you're relaxing on the weekend or heading to a casual workday. Made from soft, breathable fabrics and featuring versatile designs, our collection offers a range of options to suit your personal style. With modern fits and timeless appeal, these shirts are ideal for layering or wearing solo. Explore our collection and find your new favorite casual shirt today!
+</p>
+          
+
+          <p>
+            <a class="btn btn-secondary" href="#" role="button">Refresh Your Casual Shirt Collection
+              &raquo;</a>
+          </p>        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="fixed-size-image" src="./MenClothingPageImages//MenClothingPageDenimJacketImage.jpg" alt="" style="height: 500px;">
+
+
+          <h2>Timeless Style with a Modern Twist – Explore Our Premium Denim Jacket Collection
+          </h2>
+          <p>          Elevate your wardrobe with our Premium Denim Jacket Collection, where iconic style meets contemporary comfort. Each jacket is crafted from high-quality denim, offering durability, comfort, and a sleek look that suits any occasion. Whether you're dressing up for a night out or adding a touch of cool to your everyday outfit, these jackets are designed to keep you stylish and confident. Discover a range of classic yet modern designs and find the perfect denim jacket to become a staple in your wardrobe. Shop the collection today and embrace timeless fashion with a fresh perspective!
+          </p>
+          <p>
+  <a class="btn btn-secondary" href="#" role="button" style="margin-bottom: 50px; margin-top: 50px;">Find the Perfect Fit in Denim    &raquo;</a></p><hr>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="fixed-size-image" src="./MenClothingPageImages/MenClothingPageButtonDownShirtImage.jpg" alt="" style="height: 500px;">
+
+
+          <h2>Timeless Elegance – Discover Our Classic Shirt Collection
+          </h2>
+          <p>Explore our Classic Shirt Collection, where timeless elegance meets modern comfort. Each shirt is crafted from premium, breathable fabrics, offering unmatched comfort and a sophisticated look that’s perfect for any occasion. Whether you’re dressing up for a special event or keeping it casual for a laid-back day, our shirts feature a tailored fit and versatile style that enhance your wardrobe. Discover the perfect shirts to build a refined and stylish look. Shop the collection today and elevate your outfits with these essential wardrobe staples!
+          </p>
+
+<p>
+  <a class="btn btn-secondary" href="#" role="button">Get Stylish in Short-Sleeve Shirts
+    &raquo;</a>
+</p>        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="fixed-size-image" src="./MenClothingPageImages/MenClothingPageFormalPantImage.jpg" alt="" style="height: 500px;">
+
+
+          <h2>Elevate Your Style with Our Sophisticated Formal Pant Collection
+          </h2>
+          <p>Step up your wardrobe with our Sophisticated Formal Pant Collection, crafted for both style and comfort. Made from high-quality, tailored fabrics, each pant offers a refined fit that enhances any formal or business attire. Whether you’re preparing for a crucial meeting, a special event, or a formal occasion, these pants provide a polished and professional look. With classic cuts and versatile colors, our collection is perfect for adding a touch of elegance and class to your essentials. Explore the collection today and upgrade your formal wardrobe with these must-have pieces!
+          </p>
+
+<p>
+  <a class="btn btn-secondary" href="#" role="button">Elevate Your Look with Formal Pants
+    &raquo;</a>
+</p>        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="fixed-size-image" src="./MenClothingPageImages/MenClothingPageJeansPantImage.jpg" alt="" style="height: 500px;">
+
+<h2>Versatile and Stylish – Explore Our Perfect Jeans Pant Collection for Every Occasion
+</h2>
+<p>Discover the ultimate collection of jeans that combines style, comfort, and versatility. Our Premium Jeans Pant Collection features high-quality denim with a modern fit designed to flatter every body type. Whether you’re heading out for a casual day or dressing down for a relaxed evening, these jeans offer the perfect blend of fashion and function. With classic designs and a variety of washes, you can effortlessly pair them with your favorite shirts and jackets. Elevate your everyday look with these must-have jeans from our collection today!
+</p>
+          
+
+<p>
+  <a class="btn btn-secondary" href="#" role="button" style="margin-bottom: 50px; margin-top: 50px;">Discover Trendy Jeans Pants
+    &raquo;</a></p><hr>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="fixed-size-image" src="./MenClothingPageImages/MenClothingPageLeatherJacketImage.jpg" alt="" style="height: 500px;">
+
+
+          <h2>Command Attention with Our Premium Leather Jacket Collection
+          </h2>
+          <p>Make a statement with our Premium Leather Jacket Collection, crafted for those who dare to stand out. Each jacket is made from high-quality leather, offering a perfect blend of durability, comfort, and timeless style. With sleek designs and a modern fit, these jackets are ideal for both casual and sophisticated looks. Whether you’re heading out for a night on the town or looking to elevate your everyday outfits, our leather jackets are your go-to choice for an effortlessly cool and confident appearance. Explore the collection today and add a touch of edge to your wardrobe with these iconic pieces!
+          </p>
+
+<p>
+  <a class="btn btn-secondary" href="#" role="button">Get the Ultimate Leather Look
+    &raquo;</a>
+</p>        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="fixed-size-image" src="./MenClothingPageImages/MenClothingPageShortsImage.jpg" alt="" style="height: 500px;">
+
+<h2>Stay Cool and Stylish with Our Essential Shorts Collection
+</h2>
+<p>Beat the heat in style with our Essential Shorts Collection, designed for ultimate comfort and effortless fashion. Crafted from lightweight, breathable fabrics, these shorts are perfect for sunny days, casual outings, or relaxing at home. Featuring versatile designs and a comfortable fit, they pair seamlessly with your favorite tees or tanks for a relaxed yet stylish look. Whether you’re hitting the beach or enjoying a laid-back weekend, our shorts are your go-to choice for casual, cool comfort. Explore the collection today and refresh your summer wardrobe with these must-have essentials!
+</p>
+          
+
+<p>
+  <a class="btn btn-secondary" href="#" role="button">Find Your New Favorite Shorts
+    &raquo;</a>
+</p>        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="fixed-size-image" src="./MenClothingPageImages/MenClothingPageRainCoatImage.jpg" alt="" style="height: 500px;">
+
+          <h2>Stay Dry and Stylish with Our Premium Raincoat Collection
+          </h2>
+          <p>Embrace rainy days with confidence with our Premium Raincoat Collection, designed to keep you dry and stylish no matter the weather. Crafted from high-quality, water-resistant fabrics, these raincoats offer superior protection while maintaining a sleek, modern look. With adjustable features and practical designs, they are perfect for everything from urban commutes to outdoor adventures. Stay comfortable and fashionable during any downpour with these essential outerwear pieces. Explore the collection today and gear up for rainy weather with our top-rated raincoats!
+          </p>
+          
+
+<p>
+  <a class="btn btn-secondary" href="#" role="button" style="margin-bottom: 50px; margin-top: 50px;">Get Prepared for Rainy Days
+    &raquo;</a></p><hr>
+          </p>
+          <hr>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="fixed-size-image" src="./MenClothingPageImages/MenClothingPageHawaiianShirtImage.jpg" alt="" style="height: 500px;">
+          <h2>Embrace the Vibe with Our Vibrant Hawaiian Shirt Collection
+          </h2>
+          <p>Channel laid-back island vibes with our Vibrant Hawaiian Shirt Collection, perfect for adding a splash of fun to your wardrobe. Made from lightweight, breathable fabrics, these shirts offer both comfort and style with bold patterns and a relaxed fit. Whether you’re heading to the beach, attending a casual gathering, or simply brightening up your everyday look, our collection brings a touch of tropical flair to any occasion. Dive into a world of color and relaxation—explore our collection and find your new favorite Hawaiian shirt today!
+          </p>
+
+<p>
+  <a class="btn btn-secondary" href="#" role="button">Browse Top Hawaiian Shirt Picks
+    &raquo;</a>
+</p>        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+     
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+  </main>
+
+
+
+</body>
+
+</html>
